@@ -30,7 +30,7 @@ const TodoForm = () => {
                 onChange={onInputChange}
                 value={text}
             />
-             <input type="submit" value="Submit"/>
+             <input className="submitButton" type="submit" value="Submit"/>
            
         </form>
     )

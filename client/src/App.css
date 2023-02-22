@@ -5,6 +5,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 header {
   text-align: center;
 }
@@ -67,6 +69,13 @@ article {
   width: 100px;
   border-radius: 5px;
   margin-top: 15px;
+}
+
+.submitButton{
+  margin-top: 20px;
+  width: 20%;
+  margin-left: 45%;
+  cursor: pointer;
 }
 
 .button.selected {
