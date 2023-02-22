@@ -23,16 +23,18 @@ const TodoForm = () => {
     }
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input  
-                placeholder="Enter new todo..."
-                className="input"
-                onChange={onInputChange}
-                value={text}
-            />
-             <input className="submitButton" type="submit" value="Submit"/>
-           
-        </form>
+        <>
+            <form className="form" onSubmit={onFormSubmit}>
+                <input
+                    placeholder="Enter new todo..."
+                    className="input"
+                    onChange={onInputChange}
+                    value={text}
+                />
+                <input className="submitButton" type="submit" value="Submit" />
+
+            </form>
+        </>
     )
 }
 

@@ -3,6 +3,11 @@
 body {
   width: 50%;
   margin: 0 auto;
+  background-color: #D0E4F2;
+  /* background-image: url('your-image-url-here'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -57,7 +62,10 @@ article {
   border: none;
   border-bottom: 1px solid #FFFFFF;
 }
+.main-heading{
+  color :#5D5D5D
 
+}
 .button {
   margin: 0 10px;
   padding: 10px;
