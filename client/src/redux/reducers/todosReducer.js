@@ -7,6 +7,9 @@ const todoReducers=(state =[], action)=>{
         case actiontypes.ADDNEW_TODO:
             return [action.payload , ...state]
 
+            case actiontypes.GETALL_TODO :
+                return action.payload
+
             default :
              return state
     }

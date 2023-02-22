@@ -1,19 +1,30 @@
 import React, { useEffect } from 'react'
-
+import Todo from './Todo'
 import { getAllTodos } from '../redux/actions'
 
-import { useDispatch } from 'react-redux'
+import { useDispatch ,useSelector } from 'react-redux'
 function Todos() {
 
     const dispatch = useDispatch()
+
+    const todos = useSelector(state =>state.todos);
 
     useEffect(()=>{
         dispatch(getAllTodos())
     },[])
   return (
-    <div>
-        TODOS
-    </div>
+    <article>
+      <ul>
+        {
+          todos.map((todo,i)=>{
+            return(
+              <Todo key ={i} todo ={todo}
+              />
+            )
+          })
+        }
+      </ul>
+    </article>
   )
 }
 

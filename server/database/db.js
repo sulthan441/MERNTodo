@@ -5,13 +5,9 @@ dotenv.config();
 
 mongoose.set('strictQuery', false);
 
-
-// const DB_USERNAME = process.env.DB_USERNAME;
-// const DB_password =  process.env.DB_password;
 const Connection = () => {
 
-
-    const MONGODB_URI = `mongodb+srv://mohammedsulthan:sulthantechie@mern-todo-21-02.hhtgkke.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGODB_URI = process.env.MONGODB_URI
 
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
