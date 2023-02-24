@@ -9,6 +9,7 @@ export const addNewTodo = (data) => async (dispatch) => {
         const res = await axios.post(`${API_URL}/todos`, { data });
 
         dispatch({ type: ADDNEW_TODO , payload: res.data });
+
     } catch (error) {
         console.log('Error while calling addNewTodo API ', error.message);
     }
@@ -54,7 +55,7 @@ export const deleteTodo = (id) => async (dispatch) => {
     }
 }
 
-export const toggleTab = (tab) => async (dispatch) => {
+export const toggleTab = (tab) => async (dispatch) => { 
     dispatch({ type: TOGGLE_TAB, selected: tab })
 }
 
